@@ -5,7 +5,7 @@ import H2 from '../typography/H2'
 const SkillsSection = () => {
   return (
     <section className=''>
-      <H2 text='About' />
+      <H2 text='Skills' />
       <H1 text='My Qualifications and Skills' />
 
       <div className='flex gap-1 w-28 mb-6'>

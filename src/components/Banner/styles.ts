@@ -3,7 +3,8 @@ import { Style } from "../../types/style"
 export const main: Style = {
   className: `flex flex-col lg:flex-row w-full relative h-screen text-xl`,
   style: {
-    backgroundColor: 'var(--primary-light)'
+    backgroundColor: 'var(--primary-light)',
+    minHeight: 840
   }
 } 
 

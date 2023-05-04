@@ -4,7 +4,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { Style } from '../../types/style'
 
 const containerStyle: Style = {
-  className: 'absolute rounded-full right-5 lg:left-5 lg:right-auto lg:top-48 flex flex-col gap-2 py-2',
+  className: 'absolute rounded-full right-5 lg:left-5 lg:right-auto lg:top-48 flex flex-col gap-2 py-2 z-10',
   style: { border: '1px solid var(--dark)', color: 'var(--dark)' }
 }
 

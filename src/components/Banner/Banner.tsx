@@ -23,11 +23,11 @@ const Banner = () => {
       
       <div {...styles.rightParent}>
         <div {...styles.content}>
-            <p {...styles.introduction}>Hello I'm</p>
+            <p {...styles.introduction}>Hello I&apos;m</p>
             <h1 {...styles.name}>Bruno Lima</h1>
             <h2 className='text-xl md:text-3xl mb-2'>Software Developer</h2>
             <p className='text-base md:text-xl'>
-              I'm driven by a desire to create software that makes a real difference in people's lives,
+              I&apos;m driven by a desire to create software that makes a real difference in people&apos;s lives,
               and I have a proven track record of delivering high-quality code on time and on budget.
             </p>
         </div>

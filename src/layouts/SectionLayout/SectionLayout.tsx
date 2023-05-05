@@ -6,7 +6,7 @@ interface Props {
 
 const SectionLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div className='p-5 sm:p-7 md:p-9 lg:p-11 xl:p-14'>
+    <div className='pt-20 pb-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14'>
       {children}
     </div>
   )

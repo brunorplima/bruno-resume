@@ -8,14 +8,12 @@ interface Props {
   readonly h2: string
 }
 
-const SectionHeader: React.FC<Props> = ({ h1, h2 }) => {
-  return (
-    <>
-      <H2 text={h2} />
-      <H1 text={h1} />
-      <Separator />
-    </>
-  )
-}
+const SectionHeader: React.FC<Props> = ({ h1, h2 }) => (
+  <>
+    <H2 text={h2} />
+    <H1 text={h1} />
+    <Separator />
+  </>
+)
 
 export default SectionHeader

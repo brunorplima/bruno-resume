@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Banner from '../src/components/Banner'
 import SkillsSection from '../src/components/SkillsSection'
-import SectionLayout from '../src/layouts/SectionLayout'
+import ExperienceSection from '../src/components/ExperienceSection'
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +15,9 @@ const Home: NextPage = () => {
 
       <Banner />
 
-      <SectionLayout>
-        <SkillsSection />
-      </SectionLayout>
+      <SkillsSection />
+
+      <ExperienceSection />
     </>
   )
 }

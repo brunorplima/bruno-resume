@@ -9,7 +9,7 @@ interface Props {
   readonly headerMarginBottom?: number
 }
 
-const SectionLayout: React.FC<Props> = ({ children, h1, h2, withBgColor, headerMarginBottom }) => (
+const SectionLayout: React.FC<Props> = ({ children, h1, h2, withBgColor, headerMarginBottom = 90 }) => (
   <section
     className={`pt-24 pb-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 relative`}
     style={withBgColor ? { backgroundColor: 'var(--primary-lighter)' } : {}}

@@ -1,0 +1,9 @@
+.buttonSecondary {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.buttonSecondary:hover {
+  border-color: #7598a1;
+  background-color: #7598a1;
+}

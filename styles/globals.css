@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --primary-lighter: #eef7f7;
   --primary-light: #dfe9eb;
   --primary: #61828a;
   --secondary: #E2C044;
@@ -23,6 +24,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: .3s;
+  cursor: pointer;
 }
 
 a:hover {

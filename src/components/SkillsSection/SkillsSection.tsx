@@ -1,20 +1,20 @@
 import React, { useMemo } from 'react'
 import QualificationPair from './QualificationPair'
+import SectionLayout from '../../layouts/SectionLayout'
 import {
-  SiRubyonrails,
-  SiTypescript,
-  SiMysql,
-  SiHtml5,
-  SiJavascript,
-  SiReact,
-  SiCss3,
-  SiTailwindcss,
-  SiGithub,
-  SiNextdotjs,
-  SiFirebase,
-  SiCircleci
-} from 'react-icons/si'
-import SectionHeader from '../SectionHeader'
+  Css,
+  Firebase,
+  Github,
+  Html,
+  Javascript,
+  MySql,
+  NextJs,
+  ReactIcon,
+  Redux,
+  RubyOnRails,
+  Tailwind,
+  Typescript
+} from '../Icons'
 
 const iconsStyle = 'flex justify-evenly items-center'
 
@@ -33,68 +33,72 @@ const SkillsSection = () => {
     ['React', 'Git'],
     ['HTML', 'Next.js'],
     ['SQL & NoSQL', 'Bootstrap, Tailwind'],
-    ['Firebase', 'CircleCI']
+    ['Firebase', 'Testing'],
+    ['I strive to deliver clean code that follows design pattern principles']
   ], [])
 
   return (
-    <section className=''>
-      <SectionHeader h2='Skills' h1='My Qualifications and Skills' />
-
+    <SectionLayout h2='Skills' h1='My Qualifications and Skills'>
       <div className="flex flex-col md:flex-row">
-        <div className="flex-1 md:mr-5">
-          <h3 className='text-xl mb-3'>Personal Qualifications</h3>
-          {
-            personalQualifications.map(([str1, str2]) => (
-              <QualificationPair
-                key={`${str1}-${str2}`}
-                qualification1={str1}
-                qualification2={str2}
-              />
-            ))
-          }
-          <br/><br/>
-          <h3 className="text-xl mb-3">Professional Skills</h3>
-          {
-            professionalSkills.map(([skill1, skill2]) => (
-              <QualificationPair
-                key={`${skill1}-${skill2}`}
-                qualification1={skill1}
-                qualification2={skill2}
-              />
-            ))
-          }
+        <div className="flex-1 md:mr-5 ">
+          <div>
+              <h3 className='text-xl mb-3'>Personal Qualifications</h3>
+            {
+              personalQualifications.map(([str1, str2]) => (
+                <QualificationPair
+                  key={`${str1}-${str2}`}
+                  qualification1={str1}
+                  qualification2={str2}
+                />
+              ))
+            }
+            <br/><br/>
+            <h3 className="text-xl mb-3">Professional Skills</h3>
+            {
+              professionalSkills.map(([skill1, skill2]) => (
+                <QualificationPair
+                  key={`${skill1}-${skill2}`}
+                  qualification1={skill1}
+                  qualification2={skill2}
+                />
+              ))
+            }
+            <br/>
+          </div>
         </div>
         <div
-          className="basis-1/3 flex flex-col justify-around mt-20 md:mt-0 relative py-8"
+          className="basis-1/3 xl:flex-1 mt-20 md:mt-0 flex justify-center"
           style={{ color: 'var(--primary)', minHeight: 440 }}
         >
-          <div
-            className="absolute top-0 left-0 right-0 bottom-0 border skew-y-6 -z-10"
-            style={{ border: '12px solid var(--secondary)' }}
-          ></div>
-          <div className={iconsStyle}>
-            <SiRubyonrails size={58} />
-            <SiTypescript size={32} />
-            <SiMysql size={49} />
-          </div>
-          <div className={iconsStyle}>
-            <SiJavascript size={32} />
-            <SiHtml5 size={34} />
-            <SiReact size={34} />
-          </div>
-          <div className={iconsStyle}>
-            <SiCss3 size={34} />
-            <SiGithub size={34} />
-            <SiTailwindcss size={34} />
-          </div>
-          <div className={iconsStyle}>
-            <SiNextdotjs size={34} />
-            <SiFirebase size={34} />
-            <SiCircleci size={32} />
+          <div className="max-w-md w-full flex flex-col justify-around relative py-8"> {/* style={{ minWidth: 270 }}> */}
+            <div
+              className="absolute top-0 left-0 right-0 bottom-0 border skew-y-6 -z-10"
+              style={{ border: '12px solid var(--secondary)' }}
+            ></div>
+            <div className={iconsStyle}>
+              <RubyOnRails size={58} />
+              <Typescript size={32} />
+              <MySql size={49} />
+            </div>
+            <div className={iconsStyle}>
+              <Javascript size={32} />
+              <Html size={34} />
+              <ReactIcon size={34} />
+            </div>
+            <div className={iconsStyle}>
+              <Css size={34} />
+              <Github size={34} />
+              <Tailwind size={34} />
+            </div>
+            <div className={iconsStyle}>
+              <NextJs size={34} />
+              <Firebase size={34} />
+              <Redux size={32} />
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </SectionLayout>
   )
 }
 

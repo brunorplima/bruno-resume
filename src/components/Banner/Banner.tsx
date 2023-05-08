@@ -3,6 +3,7 @@ import * as styles from './styles'
 import css from './banner.module.css'
 import Image from 'next/image'
 import SocialMediaLinks from '../SocialMediaLinks'
+import Button from '../Button'
 
 const Banner = () => {
   return (
@@ -30,6 +31,13 @@ const Banner = () => {
               I&apos;m driven by a desire to create software that makes a real difference in people&apos;s lives,
               and I have a proven track record of delivering high-quality code on time and on budget.
             </p>
+            <div className="mt-4 flex justify-start text-base">
+              <Button
+                link='/Bruno_Lima_Resume.pdf'
+                label='Download Resume'
+                theme='secondary'
+              />
+            </div>
         </div>
       </div>
     </main>

@@ -4,15 +4,16 @@ export type Project = {
   readonly imgAlt: string
   readonly legend: string
   readonly description: string
-  readonly link?: string
+  readonly link: string
 }
 
 const projects: Project[] = [
   {
     imgSrc: '/project-dosh.png',
     imgAlt: 'Dosh',
+    link: 'https://github.com/brunorplima/bruno-resume',
     legend: 'Dosh',
-    description: 'personal finance management app that helps users take control of their finances by providing an intuitive way to manage income and expenses, set budgets, and track progress towards financial goals.',
+    description: 'Dosh is an intuitive finance management app that helps you track your income, expenses, and budgets with ease.',
   },
   {
     imgSrc: '/project-divino-dog.png',
@@ -50,10 +51,5 @@ const projects: Project[] = [
     description: 'Baby shower of my son with a gift list',
   }
 ]
-
-export const getProjectKey = (project: Project) => {
-  const { imgSrc, imgAlt, legend, description } = project
-  return imgSrc + imgAlt + legend + description
-}
 
 export default projects

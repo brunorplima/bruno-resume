@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionLayout from '../../layouts/SectionLayout'
 import Project from './Project'
-import projects, { getProjectKey } from './projects'
+import projects from './projects'
 import useScreenWidth from '../../hooks/useScreenWidth'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
 import usePortfolioSection from './usePortfolioSection.hooks'
@@ -17,7 +17,7 @@ const PortfolioSection = () => {
   } = usePortfolioSection(screenWidth, projects)
 
   return (
-    <SectionLayout h1='Checkout My Work' h2='Portfolio'>
+    <SectionLayout h1='Latest Projects' h2='Portfolio'>
       <div className="flex justify-center">
         <div
           ref={slideRef}
@@ -25,8 +25,8 @@ const PortfolioSection = () => {
           style={{ width: slideWidth }}
         >
           {
-            projectsList.map(project => (
-              <Project key={getProjectKey(project)} width={projectWidth} screenWidth={screenWidth} {...project} />
+            projectsList.map((project, idx) => (
+              <Project key={project.link + idx} width={projectWidth} screenWidth={screenWidth} {...project} />
             ))
           }
         </div>

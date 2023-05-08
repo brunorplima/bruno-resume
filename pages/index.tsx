@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Banner from '../src/components/Banner'
 import SkillsSection from '../src/components/SkillsSection'
 import ExperienceSection from '../src/components/ExperienceSection'
+import PortfolioSection from '../src/components/PortfolioSection'
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,8 @@ const Home: NextPage = () => {
       <SkillsSection />
 
       <ExperienceSection />
+
+      <PortfolioSection />
     </>
   )
 }

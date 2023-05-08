@@ -32,7 +32,7 @@ const PortfolioSection = () => {
         </div>
       </div>
 
-      <div className="mt-5 sm:mt-14 w-full flex justify-center">
+      <div className="mt-10 sm:mt-14 w-full flex justify-center">
         <div className="w-20 flex justify-between">
           <GoChevronLeft
             className='cursor-pointer hover:text-slate-400'

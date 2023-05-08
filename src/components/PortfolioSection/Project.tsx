@@ -27,7 +27,7 @@ const Project: React.FC<Props & Project> = ({ imgSrc, imgAlt, link = '#', legend
         >
           {legend}
         </a>
-        <p className='text-sm mb-5'>{description}</p>
+        <p className='mb-5'>{description}</p>
         <div className="flex-1"></div>
         <div className="flex justify-center">
           <Button

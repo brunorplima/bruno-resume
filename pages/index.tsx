@@ -4,6 +4,7 @@ import Banner from '../src/components/Banner'
 import SkillsSection from '../src/components/SkillsSection'
 import ExperienceSection from '../src/components/ExperienceSection'
 import PortfolioSection from '../src/components/PortfolioSection'
+import EducationSection from '../src/components/EducationSection'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
       <ExperienceSection />
 
       <PortfolioSection />
+
+      <EducationSection />
     </>
   )
 }

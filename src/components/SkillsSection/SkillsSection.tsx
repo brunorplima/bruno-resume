@@ -34,7 +34,6 @@ const SkillsSection = () => {
     ['HTML', 'Next.js'],
     ['SQL & NoSQL', 'Bootstrap, Tailwind'],
     ['Firebase', 'Testing'],
-    ['I strive to deliver clean code that follows design pattern principles']
   ], [])
 
   return (
@@ -63,7 +62,9 @@ const SkillsSection = () => {
                 />
               ))
             }
-            <br/>
+            <p className='mt-5 lg:mt-10 text-lg'>
+              I strive to deliver clean code that follows design pattern principles
+            </p>
           </div>
         </div>
         <div

@@ -3,7 +3,7 @@ import { Style } from '../../types/style'
 import styles from './button.module.css'
 
 interface Props {
-  readonly label: string
+  readonly children: React.ReactNode
   readonly link?: string
   readonly onClick?: React.MouseEventHandler<HTMLButtonElement>
   readonly theme?: 'primary' | 'secondary'
@@ -20,7 +20,7 @@ const secondaryStyle: Style = {
   className: `${sharedStyle} text-white hover:text-white ${styles.buttonSecondary}`
 }
 
-const Button: React.FC<Props> = ({ label, link, onClick, theme = 'primary' }) => {
+const Button: React.FC<Props> = ({ children, link, onClick, theme = 'primary' }) => {
 
   const style = useMemo(() => {
     return theme === 'primary' ? primaryStyle : secondaryStyle
@@ -35,14 +35,14 @@ const Button: React.FC<Props> = ({ label, link, onClick, theme = 'primary' }) =>
             href={link}
             {...style}
           >
-            {label}
+            {children}
           </a>
         ) : (
           <button
             onClick={onClick}
             {...style}
           >
-            {label}
+            {children}
           </button>
         )
       }

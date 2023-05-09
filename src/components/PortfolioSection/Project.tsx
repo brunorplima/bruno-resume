@@ -33,10 +33,7 @@ const Project: React.FC<Props> = ({ project, width, screenWidth, setSelectedProj
         <p className='mb-5'>{description}</p>
         <div className="flex-1"></div>
         <div className="flex justify-center">
-          <Button
-            label='Details'
-            onClick={() => setSelectedProject(project)}
-          />
+          <Button onClick={() => setSelectedProject(project)}>Details</Button>
         </div>
       </div>
     </div>

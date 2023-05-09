@@ -46,7 +46,7 @@ const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, skills,
         link && (
           <>
             <div className="flex-1"></div>
-            <div className='my-8 text-center'><Button label='Visit Website' theme='secondary' link={link}/></div>
+            <div className='my-8 text-center'><Button theme='secondary' link={link}>Visit Website</Button></div>
           </>
         )
       }

@@ -4,6 +4,7 @@ import css from './banner.module.css'
 import Image from 'next/image'
 import SocialMediaLinks from '../SocialMediaLinks'
 import Button from '../Button'
+import { HiDownload } from 'react-icons/hi'
 
 const Banner = () => {
   return (
@@ -34,9 +35,13 @@ const Banner = () => {
             <div className="mt-4 flex justify-start text-base">
               <Button
                 link='/Bruno_Lima_Resume.pdf'
-                label='Download Resume'
                 theme='secondary'
-              />
+              >
+                <div className="flex gap-4 items-center">
+                  <HiDownload />
+                  <div>Download resume</div>
+                </div>
+              </Button>
             </div>
         </div>
       </div>

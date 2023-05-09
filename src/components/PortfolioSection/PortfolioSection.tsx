@@ -5,6 +5,8 @@ import projects from './projects'
 import useScreenWidth from '../../hooks/useScreenWidth'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
 import usePortfolioSection from './usePortfolioSection.hooks'
+import Modal from '../Modal'
+import ProjectModal from './ProjectModal'
 
 const PortfolioSection = () => {
   const screenWidth = useScreenWidth()
@@ -13,7 +15,9 @@ const PortfolioSection = () => {
     slideWidth,
     slideRef,
     projectsList,
-    changeLocation
+    changeLocation,
+    selectedProject,
+    setSelectedProject
   } = usePortfolioSection(screenWidth, projects)
 
   return (
@@ -26,7 +30,13 @@ const PortfolioSection = () => {
         >
           {
             projectsList.map((project, idx) => (
-              <Project key={project.link + idx} width={projectWidth} screenWidth={screenWidth} {...project} />
+              <Project
+                key={project.legend + idx}
+                width={projectWidth}
+                screenWidth={screenWidth}
+                project={project}
+                setSelectedProject={setSelectedProject}
+              />
             ))
           }
         </div>
@@ -46,6 +56,14 @@ const PortfolioSection = () => {
           />
         </div>
       </div>
+
+      <Modal
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
+        contentWidth={screenWidth < 600 ? '90%' : '70%'}
+      >
+        <ProjectModal project={selectedProject} setSelectedProject={setSelectedProject} />
+      </Modal>
     </SectionLayout>
   )
 }

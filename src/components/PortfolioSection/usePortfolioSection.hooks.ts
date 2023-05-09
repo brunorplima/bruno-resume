@@ -15,6 +15,7 @@ export const XL_SIZE = 370
 
 const usePortfolioSection = (screenWidth: number, projects: Project[]) => {
   const [location, setLocation] = useState(0)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const slideRef = createRef<HTMLDivElement>()
 
   useEffect(() => {
@@ -70,7 +71,9 @@ const usePortfolioSection = (screenWidth: number, projects: Project[]) => {
     slideWidth,
     slideRef,
     projectsList,
-    changeLocation
+    changeLocation,
+    selectedProject,
+    setSelectedProject
   }
 }
 

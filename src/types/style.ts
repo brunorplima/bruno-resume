@@ -5,4 +5,4 @@ export type Style = {
   style?: CSSProperties
 }
 
-export type Color = 'primary-lighter' | 'primary-light' | 'primary' | 'secondary' | 'dark' | 'white'
+export type Color = 'primary-lighter' | 'primary-light' | 'primary' | 'secondary' | 'dark'

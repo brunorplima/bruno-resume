@@ -11,10 +11,10 @@ interface Props {
   readonly headerMarginBottom?: number
 }
 
-const SectionLayout: React.FC<Props> = ({ children, h1, h2, lightFont, bgColor = 'white', headerMarginBottom = 90 }) => (
+const SectionLayout: React.FC<Props> = ({ children, h1, h2, lightFont, bgColor, headerMarginBottom = 90 }) => (
   <section
     className={`pt-24 pb-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 relative ${lightFont ? 'text-slate-' + lightFont : ''}`}
-    style={{ backgroundColor: `var(--${bgColor})` }}
+    style={bgColor ? { backgroundColor: `var(--${bgColor})` } : {}}
   >
     <>
       <SectionHeader {...{ h1, h2 }} />

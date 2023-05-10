@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div className="flex gap-7 mt-16 text-slate-500">
         {socialMedias.map(({ href, Icon }) => (
-          <div className="w-12 h-12 rounded-full overflow-hidden bg-white">
+          <div key={href} className="w-12 h-12 rounded-full overflow-hidden bg-white">
             <a className='w-full h-full grid place-items-center' href={href} target='_blank'>
               <Icon size={24} />
             </a>

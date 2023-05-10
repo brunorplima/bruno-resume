@@ -4,15 +4,15 @@ import graduations from './graduations'
 
 const EducationSection = () => {
   return (
-    <SectionLayout h2='Education' h1='Begin Of My Journey' withBgColor>
+    <SectionLayout h2='Education' h1='Begin Of My Journey' bgColor='primary-lighter'>
       <div className='flex flex-col items-center'>
         {graduations.map(graduation => (
           <div key={graduation.name} className="flex flex-col lg:flex-row mb-10 lg:w-3/4 lg:gap-14">
             <div className="flex flex-col flex-1 text-lg mb-3 lg:max-w-xs lg:items-end">
               <div className="text-xl font-bold">{graduation.name}</div>
               <div style={{ color: 'var(--secondary)' }}>{graduation.institution}</div>
-              <div className="text-slate-500">{graduation.type}</div>
-              <div className="text-slate-500">{graduation.period}</div>
+              <div>{graduation.type}</div>
+              <div>{graduation.period}</div>
             </div>
             {/* <div className="hidden lg:flex flex-col w-14">
               <div className="flex flex-col items-center w-full h-full">

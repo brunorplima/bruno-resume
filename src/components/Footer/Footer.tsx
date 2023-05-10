@@ -46,7 +46,8 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className='mt-10 text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl'>brunolima.cad@gmail.com</div>
+      <div className='mt-10 text-2xl sm:text-3xl md:text-4xl xl:text-5xl'>brunolima.cad@gmail.com</div>
+      <div className='mt-7 text-2xl sm:text-3xl md:text-4xl xl:text-5xl'>(778) 682-7766</div>
     </div>
   )
 }

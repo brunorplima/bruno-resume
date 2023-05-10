@@ -18,7 +18,7 @@ import {
 
 const ExperienceSection = () => {
   return (
-    <SectionLayout h2='Experience' h1='3 Years of Working Experience' withBgColor>
+    <SectionLayout h2='Experience' h1='3 Years of Working Experience'  bgColor='primary-lighter'>
       <Image
         className='absolute top-0 right-0'
         src='/sqr-shapes.png'

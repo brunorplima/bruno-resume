@@ -4,3 +4,5 @@ export type Style = {
   className?: string
   style?: CSSProperties
 }
+
+export type Color = 'primary-lighter' | 'primary-light' | 'primary' | 'secondary' | 'dark' | 'white'

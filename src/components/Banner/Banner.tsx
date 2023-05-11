@@ -8,7 +8,7 @@ import { HiDownload } from 'react-icons/hi'
 
 const Banner = () => {
   return (
-    <main {...styles.main}>
+    <main id='home' {...styles.main}>
       <div className={css.skewedBackground}></div>
 
       <div {...styles.leftParent}>

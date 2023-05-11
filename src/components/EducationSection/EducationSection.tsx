@@ -4,7 +4,7 @@ import graduations from './graduations'
 
 const EducationSection = () => {
   return (
-    <SectionLayout h2='Education' h1='Begin Of My Journey' bgColor='primary-lighter'>
+    <SectionLayout id='educationSection' h2='Education' h1='Begin Of My Journey' bgColor='primary-lighter'>
       <div className='flex flex-col items-center'>
         {graduations.map(graduation => (
           <div key={graduation.name} className="flex flex-col lg:flex-row mb-10 lg:w-3/4 lg:gap-14">

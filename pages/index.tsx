@@ -6,6 +6,7 @@ import ExperienceSection from '../src/components/ExperienceSection'
 import PortfolioSection from '../src/components/PortfolioSection'
 import EducationSection from '../src/components/EducationSection'
 import Footer from '../src/components/Footer'
+import Navbar from '../src/components/Navbar'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,8 @@ const Home: NextPage = () => {
         <meta name='description' content='Bruno Lima - Software/Web Developer' />
         <link rel='icon' href='/bl-logo.png' />
       </Head>
+
+      <Navbar />
 
       <Banner />
 

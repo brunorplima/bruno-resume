@@ -9,10 +9,10 @@ interface Props {
   readonly theme?: 'primary' | 'secondary'
 }
 
-const sharedStyle = 'border-2 rounded py-2 px-6 cursor-pointer'
+const sharedStyle = 'border-2 rounded py-2 px-6 cursor-pointer transition'
 
 const primaryStyle: Style = {
-  className: `${sharedStyle} hover:bg-slate-300`,
+  className: `${sharedStyle} hover:bg-slate-200`,
   style: { color: 'var(--dark)', borderColor: 'var(--dark)' }
 }
 

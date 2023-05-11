@@ -59,13 +59,13 @@ const Footer = () => {
         </div>
       </Button>
 
-      <div className='w-full flex-1 flex items-center justify-between md:justify-evenly mt-10 flex-wrap max-w-4xl text-lg'>
-        <a href='#home'>Home</a>
-        <a href='#skillsSection'>Skills</a>
-        <a href='#experienceSection'>Experience</a>
-        <a href='#portfolioSection'>Portfolio</a>
-        <a href='#educationSection'>Education</a>
-        <a href='#contactSection'>Contact</a>
+      <div className='w-full flex-1 flex items-center justify-evenly md:justify-evenly mt-10 flex-wrap max-w-4xl text-lg'>
+        <a className='mb-5' href='#home'>Home</a>
+        <a className='mb-5' href='#skillsSection'>Skills</a>
+        <a className='mb-5' href='#experienceSection'>Experience</a>
+        <a className='mb-5' href='#portfolioSection'>Portfolio</a>
+        <a className='mb-5' href='#educationSection'>Education</a>
+        <a className='mb-5' href='#contactSection'>Contact</a>
       </div>
 
       <div className='mt-10 text-2xl sm:text-3xl md:text-4xl xl:text-5xl'>brunolima.cad@gmail.com</div>

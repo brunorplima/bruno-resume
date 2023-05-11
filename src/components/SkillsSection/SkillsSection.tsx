@@ -22,7 +22,7 @@ const SkillsSection = () => {
 
   const personalQualifications = useMemo(() => [
     ['Quick learner', 'Hard worker'],
-    ['Disciplined', 'Passionate about programming'],
+    ['Disciplined', 'Development with best practices'],
     ['Detail oriented', 'Good communicator'],
     ['Problem solver', 'Desire to learn']
   ], [])
@@ -33,7 +33,8 @@ const SkillsSection = () => {
     ['React', 'Git'],
     ['HTML', 'Next.js'],
     ['SQL & NoSQL', 'Bootstrap, Tailwind'],
-    ['Firebase', 'Testing']
+    ['Firebase', 'Testing'],
+    ['API', 'Teamwork'],
   ], [])
 
   return (
@@ -63,7 +64,7 @@ const SkillsSection = () => {
               ))
             }
             <p className='mt-5 lg:mt-10 text-lg'>
-              I think it&apos;s very important to deliver code that follows common design pattern principles. This is the reason I strive to build software with best practices in mind.
+              I think it&apos;s very important to deliver code that follows common design patterns principles. This is the reason I strive to build software with best practices in mind.
             </p>
           </div>
         </div>

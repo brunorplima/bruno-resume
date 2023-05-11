@@ -63,7 +63,7 @@ const SkillsSection = () => {
               ))
             }
             <p className='mt-5 lg:mt-10 text-lg'>
-              I strive to deliver clean code that follows design pattern principles
+              I think it&apos;s very important to deliver code that follows common design pattern principles. This is the reason I strive to build software with best practices in mind.
             </p>
           </div>
         </div>

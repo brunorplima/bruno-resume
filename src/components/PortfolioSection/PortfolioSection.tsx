@@ -21,7 +21,7 @@ const PortfolioSection = () => {
   } = usePortfolioSection(screenWidth, projects)
 
   return (
-    <SectionLayout h1='Latest Projects' h2='Portfolio'>
+    <SectionLayout id='portfolioSection' h1='Latest Projects' h2='Portfolio'>
       <div className="flex justify-center">
         <div
           ref={slideRef}

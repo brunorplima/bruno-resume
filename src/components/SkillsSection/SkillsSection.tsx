@@ -37,7 +37,7 @@ const SkillsSection = () => {
   ], [])
 
   return (
-    <SectionLayout h2='Skills' h1='My Qualifications and Skills'>
+    <SectionLayout id='skillsSection' h2='Skills' h1='My Qualifications and Skills'>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 md:mr-5 ">
           <div>

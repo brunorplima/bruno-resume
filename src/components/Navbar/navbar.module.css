@@ -1,0 +1,27 @@
+@keyframes grow {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 420px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    max-height: 420px;
+  }
+  to {
+    max-height: 0px;
+  }
+}
+
+.show {
+  animation: .3s ease-out grow;
+  max-height: 420px;
+}
+
+.hide {
+  animation: .3s ease-out shrink;
+  max-height: 0px;
+}

@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <div
       id='contactSection'
-      className='flex flex-col items-center py-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 scroll-m-64'
+      className='flex flex-col items-center py-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 scroll-m-64 md:scroll-m-16'
       style={{ backgroundColor: 'var(--primary-light)' }}
     >
       <Image src='/brunolima-logo.png' alt='Bruno Lima logo' width={60} height={74} />

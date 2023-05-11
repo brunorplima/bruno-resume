@@ -1,7 +1,7 @@
 import { Style } from "../../types/style"
 
 export const main: Style = {
-  className: `flex flex-col lg:flex-row w-full relative h-screen text-xl scroll-m-64`,
+  className: `flex flex-col lg:flex-row w-full relative h-screen text-xl scroll-m-64 md:scroll-m-16`,
   style: {
     backgroundColor: 'var(--primary-light)',
     minHeight: 840

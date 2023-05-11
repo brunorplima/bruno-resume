@@ -15,7 +15,7 @@ interface Props {
 const SectionLayout: React.FC<Props> = ({ children, h1, h2, id, lightFont, bgColor, headerMarginBottom = 90 }) => (
   <section
     id={id}
-    className={`pt-24 pb-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 scroll-m-64 relative ${lightFont ? 'text-slate-' + lightFont : ''}`}
+    className={`pt-24 pb-32 px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-32 scroll-m-64 md:scroll-m-16 relative ${lightFont ? 'text-slate-' + lightFont : ''}`}
     style={bgColor ? { backgroundColor: `var(--${bgColor})` } : {}}
   >
     <>

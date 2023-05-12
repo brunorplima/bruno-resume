@@ -17,7 +17,7 @@ const SocialMediaLinks = () => {
       <a target='_blank' href='https://github.com/brunorplima' className='p-2'>
         <FaGithub size={24} />
       </a>
-      <a target='_blank' href='https://www.facebook.com/profile.php?id=100002401369385&ref=bookmarks' className='p-2'>
+      <a target='_blank' href='https://www.facebook.com/profile.php?id=100002401369385' className='p-2'>
         <FaFacebookF size={24} />
       </a>
       <a target='_blank' href='https://www.instagram.com/bruno.fg58/?hl=en' className='p-2'>

@@ -57,7 +57,7 @@ const ExperienceSection = () => {
           jobType='Full-Time'
           skills={[Javascript, ReactIcon, Redux, Database, Firebase]}
         >
-          <p>I designed and developed the company&apos;s e-commerce website. Further I received a job offer to keep working on the website with duties such as keep developing new solutions to the website, improve layout and UX, create and optimize content, keep improving the database structure, etc.</p>
+          <p>I redesigned and developed Inheritance Publications&apos; e-commerce website, creating a modern and user-friendly platform. I improved the layout, user experience, and search functionality, making it easier for customers to browse and find products. The website, powered by Next.js, benefited from server-side rendering, resulting in improved performance and ease of maintenance. I optimized the database structure and integrated the Paypal payment system API for secure transactions. The positive feedback received validated the success of the website's transformation.</p>
         </Experience>
       </div>
     </SectionLayout>

@@ -46,7 +46,7 @@ const ExperienceSection = () => {
           jobType='Freelance Work'
           skills={[Typescript, ReactIcon, Database, NextJs, Firebase]}
         >
-          <p>I Designed and developed an e-commerce website to sell the company&apos;s products. The project contains user authentication to allow users to have a better experience and relationship with the company. The website has a platform for Christian articles and texts which users may interact with by leaving their comments. A built-in review system helps customers to choose the right products. At last, an admin panel was developed to allow the management of database, website content, history of purchases and user information.</p>
+          <p>I Designed and developed an e-commerce website to sell the company&apos;s products. The project contains user authentication to allow users to have a better experience and relationship with the company. The website has a platform for Christian articles and texts which users may interact with by leaving their comments. A built-in review system helps customers to choose the right products. At last, an admin panel was developed to allow the management of the database, website content, history of purchases, and user information.</p>
         </Experience>
 
         <Experience

@@ -33,6 +33,7 @@ const ExperienceSection = () => {
           period='Jul 2021 - Apr 2023'
           link='https://strattix.com'
           jobType='Full-Time'
+          jobTitle='Software Developer'
           skills={[RubyOnRails, ReactIcon, Redux, MySql, Html, Css]}
         >
               <p>As a software developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency</p>
@@ -55,6 +56,7 @@ const ExperienceSection = () => {
           period='May 2020 - Apr 2021'
           link='https://inhpubli.vercel.app/'
           jobType='Full-Time'
+          jobTitle='React Developer'
           skills={[Javascript, ReactIcon, Redux, Database, Firebase]}
         >
           <p>I redesigned and developed Inheritance Publications&apos; e-commerce website, creating a modern and user-friendly platform. I improved the layout, user experience, and search functionality, making it easier for customers to browse and find products. The website, powered by Next.js, benefited from server-side rendering, resulting in improved performance and ease of maintenance. I optimized the database structure and integrated the Paypal payment system API for secure transactions. The positive feedback received validated the success of the website&apos;s transformation.</p>

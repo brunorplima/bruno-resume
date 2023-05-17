@@ -8,19 +8,21 @@ interface Props {
   readonly company: string
   readonly jobType: 'Full-Time' | 'Freelance Work'
   readonly period: string
+  readonly jobTitle?: string
   readonly skills?: IconType[]
   readonly children?: React.ReactNode
   readonly link?: string
 }
 
-const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, skills, children, link }) => {
+const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, jobTitle, skills, children, link }) => {
   return (
     <div className="bg-white p-6 flex flex-col shadow rounded lg:w-72 xl:w-80 mb-7 lg:mb-0 transition-shadow hover:shadow-xl">
       <div className="flex flex-col sm:flex-row justify-between lg:flex-col">
-        <div className="flex items-center gap-4 mb-3 sm:mb-0 lg:mb-3">
+        <div className="flex items-start gap-4 mb-3 sm:mb-0 lg:mb-3">
           <Image src={imgSrc} alt={company} width={45} height={45} />
           <div>
             <h2 className='flex-1 text-xl sm:text-2xl xl:text-3xl'>{company}</h2>
+            {jobTitle && <p>{jobTitle}</p>}
             <p>{jobType}</p>
           </div>
         </div>

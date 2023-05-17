@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className='flex justify-between '>
         <div className='grid pl-4 lg:pl-7 xl:pl-10 2xl:pl-20 w-20'>
           <div className='w-7 lg:w-10'>
-            <a href='#'><Image src='/brunolima-logo.png' alt='Bruno Lima logo' width={40} height={49} /></a>
+            <a href='/'><Image src='/brunolima-logo.png' alt='Bruno Lima logo' width={40} height={49} /></a>
           </div>
         </div>
 

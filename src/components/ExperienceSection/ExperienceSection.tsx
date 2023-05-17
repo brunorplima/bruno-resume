@@ -35,7 +35,7 @@ const ExperienceSection = () => {
           jobType='Full-Time'
           skills={[RubyOnRails, ReactIcon, Redux, MySql, Html, Css]}
         >
-              <p>As a software developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code, and implementing new features. I worked closely with the engineering team to clarify requirements. I used React and Ruby on Rails to build UI and create APIs. I also implemented testing and worked with CI/ CD to ensure software quality and improve efficiency.</p>
+              <p>As a software developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency</p>
         </Experience>
 
         <Experience

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { MdClose } from 'react-icons/md'
 import css from './navbar.module.css'
+import Link from 'next/link'
 
 type Link = { href: string, label: string }
 
@@ -26,7 +27,7 @@ const Navbar = () => {
       <div className='flex justify-between '>
         <div className='grid pl-4 lg:pl-7 xl:pl-10 2xl:pl-20 w-20'>
           <div className='w-7 lg:w-10'>
-            <a href='/'><Image src='/brunolima-logo.png' alt='Bruno Lima logo' width={40} height={49} /></a>
+            <Link href='/'><Image src='/brunolima-logo.png' alt='Bruno Lima logo' width={40} height={49} /></Link>
           </div>
         </div>
 

@@ -9,14 +9,14 @@ type Graduation = {
 
 const graduations: Graduation[] = [
   {
-    name: 'Applied Software Development',
+    name: 'Applied Web Development',
     institution: 'British Columbia Institute of Technology',
     type: 'Associate Certificate',
     period: '2018 - 2019',
     description: 'Knowledge on the main technologies used for web and app development such as HTML, CSS, JavaScript and its derived libraries and frameworks such as React, Angular, Node, etc. Also Knowledge on databases both SQL and NoSQL.'
   },
   {
-    name: 'Applied Web Development',
+    name: 'Applied Software Development',
     institution: 'British Columbia Institute of Technology',
     type: 'Associate Certificate',
     period: '2017 - 2018',

@@ -1,7 +1,15 @@
+import { IconType } from "react-icons"
+import { IoMdLock } from "react-icons/io"
+import { IoConstruct } from "react-icons/io5"
 
 export type Links = {
   readonly site?: string
   readonly repo?: string
+}
+
+export type Highlight = {
+  readonly text: string
+  readonly Icon?: IconType
 }
 
 export type Project = {
@@ -12,8 +20,7 @@ export type Project = {
   readonly links: Links
   readonly longDescription: string
   readonly teckStack: string
-  readonly inDevelopment?: boolean
-  readonly privateRepo?: boolean
+  readonly highlights?: Highlight[]
 }
 
 const projects: Project[] = [
@@ -27,7 +34,7 @@ const projects: Project[] = [
     description: 'Dosh is an intuitive finance management app that helps you track your income, expenses, and budgets with ease.',
     longDescription: 'Dosh is a powerful financial management tool designed to help you take control of your finances. With Dosh, you can easily log your income and expenses, categorize your spending, and set budgets for each category. Our app offers a dashboard view of your global balance and individual account balances, along with customizable reports and automatic notifications to keep you informed about your money. Whether you\'re looking to stick to a budget, save for a big purchase, or just keep track of your finances, Dosh has everything you need to stay on top of your financial life. Join the thousands of users who trust Dosh to help them achieve their financial goals.',
     teckStack: 'Ruby on Rails so far',
-    inDevelopment: true
+    highlights: [{ text: 'Project in development', Icon: IoConstruct }]
   },
   {
     imgSrc: '/project-divino-dog.png',
@@ -40,6 +47,7 @@ const projects: Project[] = [
     description: 'Order management for Divino Dog. Boosts productivity, improves customer experience, keeps track and record of all the orders.',
     longDescription: 'Divino Dog Menu is the ultimate mobile-focused web app for the food industry, specifically designed for the hot dog company Divino Dog. It allows customers to place orders, while keeping them up-to-date with their order\'s progress. With a simple and user-friendly interface, customers can easily place an order, which begins in an unpaid status. Once the order is placed, customers can track its progress, while the admin keeps track of all the orders on the admin panel.\nDivino Dog Menu offers different statuses for orders, including unpaid, paid, preparing, done, and canceled. This provides real-time feedback to the customer and streamlines the process from placing an order to receiving it. The app does not deal with payments, and customers can pay for their orders at the cashier with an order number issued to each order.\nThe admin has full control over the products area, where they can manage toppings, menu item options, categories, and promotions with expiration dates. The app also offers different user types, including regular users, admin users, and master users. The owners of Divino Dog are master users and can add or remove admin users from among regular users. This allows them to authorize employees to work as admin users.\nThe settings area allows for flexibility in managing current orders, adding toppings, and managing content for the about us page. Divino Dog Menu provides an efficient and effective way for Divino Dog to manage their business, and offers customers a seamless experience from placing an order to receiving it.',
     teckStack: 'Typescript, React, Next.js, Firebase, SCSS, Tailwind',
+    highlights: [{ text: 'Team of 2 developers' }]
   },
   {
     imgSrc: '/project-providence.png',
@@ -63,7 +71,7 @@ const projects: Project[] = [
     description: 'Online bookstore with more than 10 thousand products',
     longDescription: 'An ecommerce website for Inheritance Publications. I improved their old website turning it into a modern looking website with better user experience resulted from the capabilities of searching, filtering and sorting of all more than 10 thousand products. It is a server-side rendered website, powered by Next.js. Since its implementation the website has been easier to maintain and adapt to new changes. It uses Paypal payment system API. All the feedback received was positive.',
     teckStack: 'Javascript, React, Next.js, Firebase, SCSS, Bootstrap',
-    privateRepo: true
+    highlights: [{ text: 'Private repo', Icon: IoMdLock }]
   },
   {
     imgSrc: '/project-minesweeper.png',

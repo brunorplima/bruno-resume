@@ -24,7 +24,7 @@ const ProjectModal: React.FC<Props> = ({ project, setSelectedProject }) => {
       </div>
   
       <div>
-        <Highlights inDevelopment={project?.inDevelopment} privateRepo={project?.privateRepo} />
+        <Highlights highlights={project?.highlights} />
         <H3>The App</H3>
         {mainDescription.map((p, idx) => (
           <p className={idx + 1 !== mainDescription.length ? 'mb-2' : ''} key={p}>

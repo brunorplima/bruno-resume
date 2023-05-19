@@ -64,7 +64,7 @@ const SkillsSection = () => {
               ))
             }
             <p className='mt-5 lg:mt-10 text-lg'>
-              I think it&apos;s very important to deliver code that follows common design patterns principles. This is the reason I strive to build software with best practices in mind.
+              I am dedicated to delivering high-quality code that adheres to industry-standard design patterns and principles. By incorporating best practices into my software development process, I ensure the development of robust and maintainable solutions.
             </p>
           </div>
         </div>

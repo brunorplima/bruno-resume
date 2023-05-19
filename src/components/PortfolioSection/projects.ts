@@ -1,6 +1,7 @@
 import { IconType } from "react-icons"
 import { IoMdLock } from "react-icons/io"
 import { IoConstruct, IoPeopleSharp } from "react-icons/io5"
+import { ImMobile } from 'react-icons/im'
 
 export type Links = {
   readonly site?: string
@@ -47,7 +48,10 @@ const projects: Project[] = [
     description: 'Order management for Divino Dog. Boosts productivity, improves customer experience, keeps track and record of all the orders.',
     longDescription: 'Divino Dog Menu is the ultimate mobile-focused web app for the food industry, specifically designed for the hot dog company Divino Dog. It allows customers to place orders, while keeping them up-to-date with their order\'s progress. With a simple and user-friendly interface, customers can easily place an order, which begins in an unpaid status. Once the order is placed, customers can track its progress, while the admin keeps track of all the orders on the admin panel.\nDivino Dog Menu offers different statuses for orders, including unpaid, paid, preparing, done, and canceled. This provides real-time feedback to the customer and streamlines the process from placing an order to receiving it. The app does not deal with payments, and customers can pay for their orders at the cashier with an order number issued to each order.\nThe admin has full control over the products area, where they can manage toppings, menu item options, categories, and promotions with expiration dates. The app also offers different user types, including regular users, admin users, and master users. The owners of Divino Dog are master users and can add or remove admin users from among regular users. This allows them to authorize employees to work as admin users.\nThe settings area allows for flexibility in managing current orders, adding toppings, and managing content for the about us page. Divino Dog Menu provides an efficient and effective way for Divino Dog to manage their business, and offers customers a seamless experience from placing an order to receiving it.',
     teckStack: 'Typescript, React, Next.js, Firebase, SCSS, Tailwind',
-    highlights: [{ text: 'Team of 2 developers', Icon: IoPeopleSharp }]
+    highlights: [
+      { text: 'Mobile app', Icon: ImMobile },
+      { text: 'Team of 2 developers', Icon: IoPeopleSharp }
+    ]
   },
   {
     imgSrc: '/project-providence.png',

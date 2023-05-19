@@ -41,7 +41,7 @@ const projects: Project[] = [
     imgSrc: '/project-divino-dog.png',
     imgAlt: 'Divino Dog',
     links: {
-      site: 'https://divinodogmenu.vercel.app/',
+      site: 'https://divino-dog-menu-app-git-english-translation-brunorplima.vercel.app/',
       repo: 'https://github.com/brunorplima/divino-dog-menu-app'
     },
     legend: 'Divino Dog Menu App - Mobile',

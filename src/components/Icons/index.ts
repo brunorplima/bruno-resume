@@ -1,4 +1,4 @@
-import { FaDatabase } from 'react-icons/fa'
+import { FaDatabase, FaAws } from 'react-icons/fa'
 import {
   SiRubyonrails,
   SiTypescript,
@@ -39,3 +39,5 @@ export const Firebase = SiFirebase
 export const Redux = SiRedux
 
 export const Database = FaDatabase
+
+export const Aws = FaAws

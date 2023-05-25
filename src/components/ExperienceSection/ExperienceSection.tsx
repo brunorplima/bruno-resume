@@ -3,7 +3,7 @@ import SectionLayout from '../../layouts/SectionLayout'
 import Image from 'next/image'
 import Experience from '../Experience'
 import {
-  Css,
+  Aws,
   Database,
   Firebase,
   Html,
@@ -31,18 +31,20 @@ const ExperienceSection = () => {
           imgSrc='/strattix.jpg'
           company='Strattix'
           period='Jul 2021 - Apr 2023'
+          techHighlights={['Ruby on Rails', 'React', 'Javascript', 'AWS']}
           link='https://strattix.com'
           jobType='Full-Time'
           jobTitle='Software Developer'
-          skills={[RubyOnRails, ReactIcon, Redux, MySql, Html, Css]}
+          skills={[RubyOnRails, ReactIcon, Redux, MySql, Html, Aws]}
         >
-              <p>As a software developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency</p>
+              <p>As a software developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. AWS was used for deployments and general backend tasks. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency</p>
         </Experience>
 
         <Experience
           imgSrc='/vela.ico'
           company='Providence Books & Press'
           period='Mar 2021 - Jul 2021'
+          techHighlights={['React', 'Typescript', 'Next.js', 'Firebase']}
           link='https://www.providencebookspress.com/'
           jobType='Freelance Work'
           skills={[Typescript, ReactIcon, Database, NextJs, Firebase]}
@@ -54,6 +56,7 @@ const ExperienceSection = () => {
           imgSrc='/iplogo.gif'
           company='Inheritance Publications'
           period='May 2020 - Apr 2021'
+          techHighlights={['React', 'Javascript', 'Firebase']}
           link='https://inhpubli.vercel.app/'
           jobType='Full-Time'
           jobTitle='React Developer'

@@ -8,13 +8,14 @@ interface Props {
   readonly company: string
   readonly jobType: 'Full-Time' | 'Freelance Work'
   readonly period: string
+  readonly techHighlights: string[]
   readonly jobTitle?: string
   readonly skills?: IconType[]
   readonly children?: React.ReactNode
   readonly link?: string
 }
 
-const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, jobTitle, skills, children, link }) => {
+const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, techHighlights, jobTitle, skills, children, link }) => {
   return (
     <div className="bg-white p-6 flex flex-col shadow rounded lg:w-72 xl:w-80 mb-7 lg:mb-0 transition-shadow hover:shadow-xl">
       <div className="flex flex-col sm:flex-row justify-between lg:flex-col">
@@ -38,7 +39,17 @@ const Experience: React.FC<Props> = ({ imgSrc, company, jobType, period, jobTitl
 
       <div className="w-full mr-auto ml-auto my-5" style={{ backgroundColor: 'var(--primary)', paddingTop: '0.5px' }}></div>
 
-      <div>{children}</div>
+      <div className='mb-3'>
+        <p className="text-lg">Tech highlights</p>
+        <div className="flexx flex-wrapx gap-3x">
+          {techHighlights.join(', ')}
+        </div>
+      </div>
+
+      <div>
+        <p className="text-lg">Job Description</p>
+        {children}
+      </div>
 
       <div className="mt-4 py-2 px-6 flex gap-3 items-center bg-slate-200 w-fit rounded-full">
         {skills?.map((Icon, idx) => <Icon key={'' + idx} size={24}/>)}

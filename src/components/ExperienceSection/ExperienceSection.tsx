@@ -31,7 +31,7 @@ const ExperienceSection = () => {
           imgSrc='/strattix.jpg'
           company='Strattix'
           period='Jul 2021 - Apr 2023'
-          techHighlights={['Ruby on Rails', 'React', 'Javascript', 'AWS']}
+          techHighlights={['Ruby on Rails', 'React', 'Javascript', 'AWS', 'MySQL']}
           link='https://strattix.com'
           jobType='Full-Time'
           jobTitle='Software Developer'

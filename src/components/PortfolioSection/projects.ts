@@ -34,7 +34,7 @@ const projects: Project[] = [
     legend: 'Dosh',
     description: 'Dosh is an intuitive finance management app that helps you track your income, expenses, and budgets with ease.',
     longDescription: 'Dosh is a powerful financial management tool designed to help you take control of your finances. With Dosh, you can easily log your income and expenses, categorize your spending, and set budgets for each category. Our app offers a dashboard view of your global balance and individual account balances, along with customizable reports and automatic notifications to keep you informed about your money. Whether you\'re looking to stick to a budget, save for a big purchase, or just keep track of your finances, Dosh has everything you need to stay on top of your financial life. Join the thousands of users who trust Dosh to help them achieve their financial goals.',
-    teckStack: 'Ruby on Rails so far',
+    teckStack: 'Ruby on Rails, JSON Web Token (JWT)',
     highlights: [{ text: 'Project in development', Icon: IoConstruct }]
   },
   {

@@ -72,7 +72,7 @@ const SkillsSection = () => {
           className="basis-1/3 xl:flex-1 mt-20 md:mt-0 flex justify-center"
           style={{ color: 'var(--primary)', minHeight: 440 }}
         >
-          <div className="max-w-md w-full flex flex-col justify-around relative py-8"> {/* style={{ minWidth: 270 }}> */}
+          <div className="max-w-md w-full flex flex-col justify-around relative py-8">
             <div
               className="absolute top-0 left-0 right-0 bottom-0 border skew-y-6 -z-10"
               style={{ border: '12px solid var(--secondary)' }}

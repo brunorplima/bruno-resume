@@ -20,7 +20,7 @@ const graduations: Graduation[] = [
     institution: 'British Columbia Institute of Technology',
     type: 'Associate Certificate',
     period: '2017 - 2018',
-    description: 'The foundation for software development with a focus on Java development. Foundation for software development life cycle and system analysis and design.'
+    description: 'The foundation for software development with a focus on Java and C# development. Foundation for software development life cycle and system analysis and design.'
   },
   {
     name: 'Customer Service',

@@ -34,10 +34,10 @@ const ExperienceSection = () => {
           techHighlights={['Ruby on Rails', 'React', 'Javascript', 'AWS', 'MySQL']}
           link='https://strattix.com'
           jobType='Full-Time'
-          jobTitle='Fullstack Developer'
+          jobTitle='Full Stack Developer'
           skills={[RubyOnRails, ReactIcon, Redux, MySql, Html, Aws]}
         >
-              <p>As a Fullstack developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. AWS was used for deployments and general backend tasks. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency.</p>
+              <p>As a Full Stack Developer at Strattix, I contributed to the development of a product that helped companies in the oil and gas industry manage operations and costs, by debugging, improving code design and application performance, and implementing new features. I actively collaborated with the engineering team, working closely together to ensure a clear understanding of project requirements, which enabled me to create accurate technical specifications. I used React and Ruby on Rails to build UI, create APIs, and correctly integrate both ends. AWS was used for deployments and general backend tasks. I implemented testing, utilized CI/CD with CircleCI, and deployed to multiple AWS ES environments to ensure software quality and improve efficiency.</p>
         </Experience>
 
         <Experience

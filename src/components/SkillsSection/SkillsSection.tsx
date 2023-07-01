@@ -33,6 +33,7 @@ const SkillsSection = () => {
     ['React', 'Git'],
     ['HTML', 'Next.js'],
     ['SQL & NoSQL', 'Bootstrap, Tailwind'],
+    ['AWS', 'CI/CD'],
     ['Firebase', 'Testing'],
     ['API', 'Teamwork'],
   ], [])

@@ -55,7 +55,7 @@ const ExperienceSection = () => {
         <Experience
           imgSrc='/iplogo.gif'
           company='Inheritance Publications'
-          period='May 2020 - Apr 2021'
+          period='Apr 2020 - Apr 2021'
           techHighlights={['React', 'Javascript', 'Firebase']}
           link='https://inhpubli.vercel.app/'
           jobType='Full-Time'
